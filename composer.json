@@ -1,0 +1,19 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/y-takahashi/Slim.git"
+        }
+    ],
+    "require": {
+        "slim/Slim": "2.3.5"
+    },
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-0": {
+            "Reboost\\Client": ["app/"]
+        }
+    }
+}
