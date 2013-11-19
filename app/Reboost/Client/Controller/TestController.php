@@ -1,9 +1,9 @@
 <?php
 namespace Reboost\Client\Controller;
 
-class TestController
+class TestController extends BaseController
 {
-    public function main()
+    public function index()
     {
         echo TestController::class."\n";
     }

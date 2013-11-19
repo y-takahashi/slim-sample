@@ -1,5 +1,8 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$controller = new \Reboost\Client\Controller\TestController();
-$controller->main();
+$app = new \Reboost\Core\Slim();
+
+require __DIR__ . '/../app/Reboost/Client/Common/Routes.php';
+
+
