@@ -13,7 +13,8 @@
     },
     "autoload": {
         "psr-0": {
-            "Reboost\\Client": ["app/"]
+            "Reboost\\Client": ["app/"],
+            "Reboost\\Core": ["app/"]
         }
     }
 }
