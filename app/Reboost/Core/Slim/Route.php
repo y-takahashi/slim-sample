@@ -6,6 +6,16 @@ use Reboost\Client\Controller\BaseController;
 class Route extends \Slim\Route
 {
     /**
+     * Set route callable
+     * @param  mixed $callable
+     * @throws \InvalidArgumentException If argument is not callable
+     */
+    public function setCallable($callable)
+    {
+        $this->callable = $callable;
+    }
+
+    /**
      * Dispatch route
      *
      * This method invokes the route object's callable. If middleware is
