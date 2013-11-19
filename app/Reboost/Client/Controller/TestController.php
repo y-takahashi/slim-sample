@@ -5,6 +5,6 @@ class TestController extends BaseController
 {
     public function index()
     {
-        echo TestController::class."\n";
+        echo __CLASS__."\n";
     }
 }
