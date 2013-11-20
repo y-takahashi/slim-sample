@@ -1,20 +1,30 @@
 {
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/y-takahashi/Slim.git"
-        }
-    ],
-    "require": {
-        "slim/Slim": "2.3.5"
-    },
+    "name": "Flessel/reboost-client",
+    "minimum-stability": "dev",
     "config": {
         "vendor-dir": "vendor"
     },
+    "require": {
+        "php": ">=5.5.5",
+        "slim/slim": "2.3.*",
+        "slim/views": "0.1.*",
+        "twig/twig": "1.14.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*",
+        "phpunit/dbunit": "1.2.*",
+        "phake/phake": "1.*"
+    },
     "autoload": {
         "psr-0": {
-            "Reboost\\Client": ["app/"],
-            "Reboost\\Core": ["app/"]
+            "Reboost\\Client": ["src/"],
+            "Reboost\\Core": ["src/"]
         }
-    }
+    },
+    "authors": [
+        {
+            "name": "Flessel, Inc.",
+            "homepage": "http://flessel.co.jp"
+        }
+    ]
 }
