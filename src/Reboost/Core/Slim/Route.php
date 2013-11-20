@@ -27,12 +27,13 @@ class Route extends \Slim\Route
     public function dispatch()
     {
         // Routes.phpにて指定されたControllerクラスのaction(動的)メソッドを実行する
-        $callable = explode('::', $this->getCallable());
+        $callable = $this->getCallable();
         $controllerClass = $callable[0];
         $action = (isset($callable[1])) ? $callable[1] : "";
 
         // Factoryを使ってインスタンス生成するべきか
-        $controller = new $controllerClass;
+        $classReflection = new \ReflectionClass($controllerClass);
+        $controller = $classReflection->newInstance();
 
         // 全てのコントローラはBaseControllerを継承していること
         if ($controller instanceof BaseController) {
