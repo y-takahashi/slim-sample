@@ -6,6 +6,8 @@
 </head>
 <body>
     <h1>test</h1>
-    {{ urlFor('hello', {'name': "hoge"}) }}
+    <p>urlFor:{{ urlFor('hello', {'name': "hoge"}) }}</p>
+    <p>siteUrl:{{ siteUrl('/hello/fuga') }}</p>
+    <p>baseUrl:{{ baseUrl() }}</p>
 </body>
 </html>
