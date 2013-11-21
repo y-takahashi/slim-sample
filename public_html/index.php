@@ -15,7 +15,7 @@ $view->parserOptions = [
     "cache" => false,
 ];
 $view->parserExtensions = [
-    new \Slim\View\TwigExtension(),
+    new \Slim\Views\TwigExtension(),
 ];
 
 require __DIR__ . '/../src/Reboost/Client/Common/Routes.php';
