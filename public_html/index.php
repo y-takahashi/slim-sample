@@ -1,7 +1,22 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$app = new \Reboost\Core\Slim\Slim();
+// Slim初期化設定
+$app = new \Reboost\Core\Slim\Slim([
+    "view" => new \Slim\View\Twig(),
+    "debug" => true,
+    "templates.path" => '../views',
+]);
+
+// view設定
+$view = $app->view();
+$view->parserOptions = [
+    "debug" => true,
+    "cache" => false,
+];
+$view->parserExtensions = [
+    new \Slim\View\TwigExtension(),
+];
 
 require __DIR__ . '/../src/Reboost/Client/Common/Routes.php';
 
