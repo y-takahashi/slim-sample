@@ -3,7 +3,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 // Slim初期化設定
 $app = new \Reboost\Core\Slim\Slim([
-    "view" => new \Slim\View\Twig(),
+    "view" => new \Slim\Views\Twig(),
     "debug" => true,
     "templates.path" => '../views',
 ]);
