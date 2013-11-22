@@ -1,6 +1,7 @@
 {
     "name": "y-takahashi/slim-sample",
     "description": "slim sample",
+    "type": "library",
     "minimum-stability": "dev",
     "config": {
         "vendor-dir": "vendor"
