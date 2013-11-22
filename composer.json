@@ -1,5 +1,6 @@
 {
     "name": "Flessel/reboost-client",
+    "description": "slim sample",
     "minimum-stability": "dev",
     "config": {
         "vendor-dir": "vendor"
@@ -25,11 +26,5 @@
         "branch-alias": {
             "dev-master": "1.0-dev"
         }
-    },
-    "authors": [
-        {
-            "name": "Flessel, Inc.",
-            "homepage": "http://flessel.co.jp"
-        }
-    ]
+    }
 }
